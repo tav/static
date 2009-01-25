@@ -1,0 +1,315 @@
+/*
+ * default css3 printing stylesheet -- by tav
+ *
+ */
+
+/* import existing stylesheets */
+
+@import url("screen.css");
+
+/* some extracted constants */
+
+head > title {
+  string-set: pagetitle content();
+}
+
+h1.title {
+  string-set: title content();
+}
+
+head {
+  string-set: chapter "Contents";
+}
+
+meta[author] { /* doesn't seem to work */
+  string-set: author attr(author);
+}
+
+h1 {
+  string-set: chapter content();
+}
+
+@string chapter {
+  page-policy: last;
+}
+
+/* page */
+
+@page { 
+
+  border-bottom: thin solid black;
+  counter-increment: page;
+  counter-reset: footnote;
+  margin: 12mm 12mm 12mm 12mm; /* 21mm 21mm 12mm 21mm; */
+  padding: 0mm 0mm 1mm 0mm;
+  size: A4 portrait; /* 21.0cm 29.7cm */
+
+  @top {
+    content: normal;
+    margin-outside: 0%;
+    text-align: outside;
+    vertical-align: middle; /* center */
+  }
+
+  @bottom-left {
+    content: string(title) " » " string(chapter);
+    font-size: 9pt;
+    padding-top: 1mm;
+    text-align: left;
+    vertical-align: top;
+  }
+	
+  @bottom-right {
+    /* content: counter(page) "/" counter(pages); */
+    content: counter(page);
+    font-size: 9pt;
+    padding-top: 1mm;
+    text-align: right;
+    vertical-align: top;
+  }
+
+  /*
+  @outside {
+    content: counter(page);
+  }
+  */
+	   
+}
+
+/*
+
+@page:left {
+}
+
+@page:right {
+}
+
+*/
+   
+@page :first {
+
+	border-top: none;
+	border-bottom: none;
+
+	@top-right {
+		content: normal;
+	}
+
+	@top-left {
+		content: normal;
+	}
+
+	@bottom-left {
+		content: normal;
+	}
+
+	@bottom-right {
+		content: normal;
+	}
+
+	@top {
+		content: normal;
+	}
+
+	@bottom {
+		content: normal;
+	}
+
+}
+
+/* main body */
+
+body {
+  background-color: #fff;
+  border: 0;
+  /* counter-reset: mainsection; */
+  font-family: Georgia, "Bitstream Vera Serif", "Times New Roman",Tahoma,serif;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* headings */
+
+h1, h2, h3, h4, h5, h6 {
+  border: 0;
+  padding-bottom: 0;
+  page-break-after: avoid;
+}
+
+h1 {
+  border: 0;
+  /* counter-increment: mainsection; */
+  /* content: counter(mainsection, upper-roman) ". " content(); */
+  font-size: 40pt;
+  page-break-before: always;
+  text-align: center;
+}
+
+#content h1 {
+  border: 0;
+}
+
+h1.title {
+  display: block;
+  content: content();
+  background: url("aaken.png") no-repeat;
+  counter-reset: page;
+  padding-top: 120mm;
+  page-break-after: always;
+  vertical-align: middle;
+}
+
+/* images */
+
+img {
+  max-width: 100%
+}
+
+/* specific ids */
+
+#header {
+  display: none;
+}
+
+#footer {
+  display: none;
+}
+
+#sidebar { 
+  display: none;
+}
+
+#content {
+  margin-bottom: 0;
+}
+
+#main {
+  text-align: left;
+  margin: 0;
+  width: 100%;
+}
+
+/* various classes */
+
+.abstract {
+  border-bottom: thin solid #ccc;
+  margin-bottom: 20px;
+}
+
+.contents {
+  display: block;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.document {
+  line-height: 135%;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container {
+  display: none;
+}
+
+.pad-top-and-bottom {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.double-column { 
+  column-count: 2;
+  column-gap: 1.5em;
+}
+
+.triple-column { 
+  column-count: 3;
+  column-gap: 1.5em;
+}
+
+.small-text {
+  font-size: 0.9em;
+}
+
+pre.literal-block { 
+  font-size: 0.8em;  
+  line-height: 100%;
+  page-break-inside: avoid;
+}
+
+.sidebar {
+  border: thin solid black;
+  float: right;
+  color: #000;
+  margin: 0;
+  padding: 0.4em;
+  width: 11em;
+  text-align: justify;
+  position: relative;
+  font-style: italic;
+  page-break-inside: avoid;
+  background: #eee;
+  right: 0;
+  top: 0;
+}
+
+table.footnote td.label, table.citation td.label {
+  vertical-align: top;
+}
+
+/* toc */
+
+.contents ul, .contents ul li { 
+  font-weight: normal;
+  list-style: none;
+  margin: 0;
+  margin-left: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.contents ul ul {
+  margin-left: 5mm;
+}
+
+.contents ul a {
+  text-decoration: none;
+}
+
+.contents ul a::after {
+  content: leader('.') target-counter(attr(href), page);
+}
+
+/*
+   
+pages() -- total number of pages
+
+   float: outside;
+   float: top;
+   width: 11em;
+   margin-left: 0.5em;
+   padding-inside: 1em;
+   border-inside: ..;
+   text-align: justify;
+   page-break-inside: avoid;
+
+   table { border-collapse: collapse; }
+   
+For removing on *all* elements:
+
+ * { text-decoration: none }
+
+*/
+
+#comments-section, #disqus-comments-section {
+  display: none;
+}
+
+#content-info {
+  display: none;
+}
+
+#additional-content-info {
+  display: none;
+}

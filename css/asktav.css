@@ -1,0 +1,59 @@
+#main {
+  width: 700px;
+}
+
+#header {
+  background-color: #60a5bf;
+  background-color: #0099cd;
+  padding: 2.5em 3em; 
+}
+
+#header h2 {
+  padding-left: 170px;
+}
+
+#header img {
+  float: left;
+  padding-right: 10px;
+}
+
+.attention {
+  background-color: #BFEEFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #006890;
+  color: #60A5BF;
+  color: #5E7C87;
+}
+
+.sidebox {
+  background-color: #BFEEFF;
+}
+
+.post-title {
+  border-top: 1px dashed #444;
+}
+
+.post-link a {
+  font-weight: normal; 
+  color: #000;
+}
+
+/*
+
+.pre {
+  background-color: #BFEEFF;
+  background-color: #E6F8FF;
+}
+
+.literal {
+  background-color: #E6F8FF;
+}
+
+#header h1 a {
+  font-family: Georgia;
+}
+
+
+*/
