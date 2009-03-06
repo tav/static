@@ -19,20 +19,3 @@ h1, h2, h3, h4, h5, h6 {
 .sidebox {
   background-color: #FFBFBF;
 }
-
-.pre {
-  background-color: #FFE6E6;
-}
-
-.literal {
-  background-color: #FFE6E6;
-}
-
-.post-title {
-  border-top: 1px dashed #444;
-}
-
-.post-link a {
-  font-weight: normal; 
-  color: #000;
-}

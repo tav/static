@@ -322,7 +322,7 @@ table.field-list td {
 }
 
 .doctest-block {
-  font-family: "Courier 10 Pitch";
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Courier New", Courier;
   font-size: 1em;
 }
 
@@ -493,6 +493,8 @@ li {
 .float-right {
   float: right;
   margin-left: 12px;
+  padding: 5px;
+  border: 1px solid #ded0e8;
 }
 
 .image-caption {
@@ -553,10 +555,10 @@ div#rationale a.external {
   clear: both;
   margin-top: 1em;
   margin-bottom: 2em;
-  border-bottom: 0px solid #544554;
-  border-top: 3px solid #544554;
+  border-top: 1px dashed #444;
   padding-top: 1.4em;
   padding-bottom: 1em;
+  line-height: 2.3em;
 }
 
 .post-link {
@@ -565,7 +567,7 @@ div#rationale a.external {
 
 .post-link a {
   font-weight: normal; 
-  color: #544554;
+  color: #000;
   text-decoration: none;
   font-size: 2em;
 }
