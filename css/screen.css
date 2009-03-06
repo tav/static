@@ -472,6 +472,8 @@ li {
 
 .center {
   text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .hide {
@@ -493,8 +495,7 @@ li {
 .float-right {
   float: right;
   margin-left: 12px;
-  padding: 5px;
-  border: 1px solid #ded0e8;
+  margin-bottom: 5px;
 }
 
 .image-caption {
