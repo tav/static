@@ -1,7 +1,8 @@
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
+  font-weight: normal !important;
   font-size: 1.6em;
   color: #0099cd;
+  color: #5e7c87;
 }
 
 #main {
