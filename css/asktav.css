@@ -10,7 +10,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   padding-bottom: 0.5em;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #ccc;
+}
+
+#dsq-content h3 {
+  margin-bottom: 2.5em;
+  border-bottom: 1px solid #ccc;
 }
 
 #main {
