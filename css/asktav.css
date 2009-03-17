@@ -3,7 +3,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.6em;
   color: #0099cd;
   color: #5e7c87;
+  margin-top: 1.5em;
   margin-bottom: 1em;
+  clear: both;
+}
+
+h1 {
+  border-bottom: 1px solid #444;
 }
 
 #main {

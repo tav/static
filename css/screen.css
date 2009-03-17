@@ -24,7 +24,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Gill Sans", Verdana, Arial, sans-serif;
   font-weight: normal; 
-  color: #567;
 }
 
 h1 {
@@ -62,17 +61,6 @@ sup {
   padding-left: 0px;
   line-height: 1.8em;
   margin-bottom: 1em;
-}
-
-#content h1, #content h2 {
-  margin-bottom: 5px;
-  padding-bottom: 5px;
-  clear: both;
-}
-
-#content h1 {
-  border-bottom: 1px solid #ccc;
-  margin-top: 1.5em;
 }
 
 #header {
