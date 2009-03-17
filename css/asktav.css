@@ -4,11 +4,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #0099cd;
   color: #5e7c87;
   margin-top: 1.5em;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
   clear: both;
 }
 
 h1 {
+  padding-bottom: 0.5em;
   border-bottom: 1px solid #444;
 }
 
