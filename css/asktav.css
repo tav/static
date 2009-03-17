@@ -1,32 +1,49 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 1.6em;
+  color: #0099cd;
+}
+
 #main {
   width: 700px;
 }
 
-#header {
-  background-color: #60a5bf;
-  background-color: #0099cd;
-  padding: 2.5em 3em; 
+#site-header {
+  border-bottom: 1px dashed #444;
 }
 
-#header h2 {
-  padding-left: 170px;
-}
-
-#header img {
+#site-logo {
   float: left;
-  padding-right: 10px;
+  margin-right: 0.5em;
+}
+
+#site-info {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: right;
+}
+
+.article-title {
+  margin-top: 0.3em;
+  margin-bottom: 2.5em;
+  padding-bottom: 0.3em;
+  padding-top: 0.7em;
+  line-height: 2.3em;
+}
+
+.article-info {
+  font-size: 1em;
+}
+
+.additional-content-info {
+  float: right;
 }
 
 .attention {
-  background-color: #BFEEFF;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #006890;
-  color: #60A5BF;
-  color: #5E7C87;
+  background-color: #bfeeff;
 }
 
 .sidebox {
-  background-color: #BFEEFF;
+  background-color: #bfeeff;
 }
+
