@@ -9,7 +9,7 @@ var do_startup = function () {
 
   $.getScript('http://disqus.com/forums/' + DISQUS_FORUM + '/get_num_replies.js?' + query);
 
-  if (NORMHOST) {
+  if (NORMHOST && _gat) {
     var pageTracker = _gat._getTracker(GOOGLE_ANALYTICS_CODE);
     pageTracker._initData();
     pageTracker._trackPageview();
