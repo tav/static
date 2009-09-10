@@ -696,7 +696,7 @@ div#rationale a.external {
 }
 
 a.button {
-  background: transparent url('http://tav.github.com/static/gfx/bg_button_a.gif') no-repeat scroll top right;
+  background: transparent url('http://cloud.github.com/downloads/tav/plexnet/gfx.bg_button_a.gif') no-repeat scroll top right;
   color: #444;
   display: block;
   float: left;
@@ -708,7 +708,7 @@ a.button {
 }
 
 a.button span {
-  background: transparent url('http://tav.github.com/static/gfx/bg_button_span.gif') no-repeat;
+  background: transparent url('http://cloud.github.com/downloads/tav/plexnet/gfx.bg_button_span.gif') no-repeat;
   display: block;
   line-height: 14px;
   padding: 5px 0 5px 18px;
@@ -726,7 +726,7 @@ a.button:active span {
 }
 
 a.buttondown {
-  background: transparent url('http://tav.github.com/static/gfx/bg_button_a.gif') no-repeat scroll top right;
+  background: transparent url('http://cloud.github.com/downloads/tav/plexnet/gfx.bg_button_a.gif') no-repeat scroll top right;
   color: #444;
   display: block;
   float: left;
@@ -741,7 +741,7 @@ a.buttondown {
 }
 
 a.buttondown span {
-  background: transparent url('http://tav.github.com/static/gfx/bg_button_span.gif') no-repeat;
+  background: transparent url('http://cloud.github.com/downloads/tav/plexnet/gfx.bg_button_span.gif') no-repeat;
   display: block;
   line-height: 14px;
   padding: 5px 0 5px 18px;
